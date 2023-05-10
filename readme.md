@@ -1,6 +1,6 @@
 # Portfolio - REYNAGA
 
-Este es un portafolio creado con HTML, CSS, JavaScript y React. 
+Este es un portfolio creado con HTML, CSS, JavaScript
 
 ## Características 
 * Diseño responsivo. 
@@ -14,3 +14,5 @@ Este es un portafolio creado con HTML, CSS, JavaScript y React.
  * CSS3 
  * JavaScript 
  * React
+ * Postgres
+ * Redux
