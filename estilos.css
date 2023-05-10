@@ -258,4 +258,7 @@ footer:hover {
   #about-me {
     flex-wrap: wrap;
   }
+  .wrapper .icon:hover .tooltip{
+    display: none;
+  }
 }
