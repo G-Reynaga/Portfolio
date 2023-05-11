@@ -12,7 +12,7 @@
 }
 body {
   user-select: none;
-  background-image: url("./images/fondos.com.jpg");
+  background-image: url("./images/fondos.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -312,6 +312,9 @@ footer:hover {
 }
 @media only screen and (max-width: 480px) {
   /* Estilos para dispositivos móviles */
+  body{
+    background-image: url("./images/fondo-Mobile.jpg");
+  }
   #home {
     grid-template-columns: repeat(1, 1fr);
   }
