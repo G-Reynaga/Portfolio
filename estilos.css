@@ -31,13 +31,16 @@ a {
 .navbar .navbar-brand {
   font-size: 2rem;
   font-weight: bold;
-  color: white;
+  color: #ffffff;
 }
 .navbar .navbar-brand:hover {
-  color: #4c0f7b;
+  color: #ffffff;
 }
-.navbar-expand-lg .navbar-collapse {
-  justify-content: center;
+.navbar .navbar-brand span {
+  color: #4c32cd;
+}
+.navbar-expand-lg .navbar-collapse{
+  justify-content: flex-end;
 }
 .navbar-expand-lg .navbar-collapse .nav-link {
   color: white;
@@ -45,7 +48,7 @@ a {
   justify-content: flex-end;
 }
 .navbar-expand-lg .navbar-collapse .nav-link:hover {
-  color: #e4405f;
+  color: #4c32cd;
 }
 .navbar .navbar-toggler {
   border: none;
@@ -77,6 +80,39 @@ p {
   border-radius: 1rem;
 }
 #home {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  place-items: center;
+  gap: 1rem;
+}
+#home h1{
+  font-size: 3rem;
+  color: #ffffff;
+}
+#home h1 span{
+  color: #4c32cd;
+}
+#home img{
+  border-radius: 5px;
+}
+#home p {
+  font-size: 1.5rem;
+}
+#home button{
+  padding: .5rem;
+  border: none;
+  border-radius: 15px;
+  background-color: #4c32cd;
+  color: #ffffff;
+  box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.8)
+}
+#home button:active{
+  opacity: 0.5;
+  box-shadow: none
+}
+#home button span{
+  padding: .5rem;
+  color: #ffffff;
 }
 #about-me {
   display: flex;
@@ -86,9 +122,9 @@ p {
 }
 #about-me .yo {
   position: relative;
-  min-width: 20rem;
-  width: 20rem;
-  height: 20rem;
+  min-width: 10rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -119,17 +155,19 @@ p {
 #projects {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 #projects ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  text-align: center;
   gap: 2rem;
+  text-align: center;
   list-style: none;
 }
 #projects img {
-  width: 20rem;
+  width: 40rem;
   border-radius: 15px;
 }
 #projects a {
@@ -230,7 +268,7 @@ footer .container-fluid {
 }
 .fa-arrow-up {
   color: #ffffff;
-  background-color: #e4405f;
+  background-color: #4c32cd;
   padding: 1rem;
   border-radius: 2rem;
   position: relative;
@@ -245,7 +283,7 @@ footer {
 }
 
 footer .copyright {
-  color: white;
+  color: #ffffff;
   margin-top: 5px;
   font-size: 1.1rem;
 }
@@ -255,10 +293,28 @@ footer:hover {
 }
 @media only screen and (max-width: 480px) {
   /* Estilos para dispositivos móviles */
+  #home {
+    grid-template-columns: repeat(1,1fr);
+  }
+  #home img{
+    display: none;
+  }
   #about-me {
     flex-wrap: wrap;
   }
-  .wrapper .icon:hover .tooltip{
+  #projects img{
+    width: 15rem;
+  }
+  .wrapper .icon:hover .tooltip {
     display: none;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  /* Estilos para tabletas */
+  #home {
+    grid-template-columns: repeat(1,1fr);
+  }
+  #projects img{
+    width: 30rem;
   }
 }
