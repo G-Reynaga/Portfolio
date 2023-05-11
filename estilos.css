@@ -326,7 +326,7 @@ footer:hover {
 @media only screen and (max-width: 769px) {
   /* Estilos para dispositivos móviles */
   body {
-    background-image: url("./images/fondo-Mobile.jpg");
+    background-image: url("./images/fondoMobile.jpg");
   }
   #home {
     grid-template-columns: repeat(1, 1fr);
