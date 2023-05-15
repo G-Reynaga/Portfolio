@@ -129,9 +129,9 @@ p {
 }
 #about-me .yo {
   position: relative;
-  min-width: 10rem;
-  width: 10rem;
-  height: 10rem;
+  min-width: 15rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -145,6 +145,7 @@ p {
 }
 #about-me p {
   font-size: 1.5rem;
+  width: 50%;
 }
 #skills {
   display: flex;
@@ -337,6 +338,9 @@ footer:hover {
   #about-me {
     flex-wrap: wrap;
   }
+  #about-me p{
+    width: inherit
+  }
   #projects img {
     width: 15rem;
   }
@@ -347,10 +351,19 @@ footer:hover {
     display: inherit;
   }
 }
-@media only screen and (min-width: 770) and (max-width: 1024px) {
+@media only screen and (min-width: 770px) and (max-width: 1024px) {
   /* Estilos para tabletas */
   #home {
     grid-template-columns: repeat(2, 1fr);
+  }
+  #home img {
+    width: 20rem;
+  }
+  #about-me .yo{
+    display: none;
+  }
+  #about-me p{
+    width: inherit
   }
   #projects img {
     width: 30rem;
