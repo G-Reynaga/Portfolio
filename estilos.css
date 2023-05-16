@@ -69,7 +69,7 @@ a {
   outline: none;
 }
 
-.navbar .navbar-toggler-icon{
+.navbar .navbar-toggler-icon {
   background-image: url(./images/burger.png);
 }
 
@@ -174,7 +174,8 @@ p {
 }
 
 @keyframes cursor-blink {
-  from, to {
+  from,
+  to {
     border-color: transparent;
   }
   50% {
@@ -421,7 +422,7 @@ footer .copyright {
   font-size: 1.1rem;
 }
 
-.copyright span{
+.copyright span {
   color: #e4405f;
 }
 
@@ -445,6 +446,16 @@ footer .copyright {
 
   #about-me p {
     width: inherit;
+    font-size: 1rem;
+  }
+
+  #skills img {
+    width: 5rem;
+  }
+  .wrapper .icon {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
   }
 
   .wrapper .icon:hover .tooltip {
@@ -460,11 +471,11 @@ footer .copyright {
   #home {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   #home img {
     width: 20rem;
   }
-  
+
   #about-me .yo {
     display: none;
   }
