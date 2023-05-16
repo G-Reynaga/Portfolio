@@ -1,8 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");
 
 ::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+  width: 2px;
+  height: 2px;
+  background-color: rgb(224, 223, 223);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(140, 136, 132);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(74, 70, 66);
 }
 
 * {
@@ -458,12 +468,32 @@ footer .copyright {
     font-size: 18px;
   }
 
+  .formulario {
+    display: inherit;
+  }
+
   .wrapper .icon:hover .tooltip {
     display: none;
   }
 
-  .formulario {
-    display: inherit;
+  .wrapper .whatsapp {
+    background: #0bb127;
+    color: #ffffff;
+  }
+
+  .wrapper .instagram {
+    background: #e4405f;
+    color: #ffffff;
+  }
+
+  .wrapper .github {
+    background: #333333;
+    color: #ffffff;
+  }
+
+  .wrapper .linkedin {
+    background: #2165a9;
+    color: #ffffff;
   }
 }
 @media only screen and (min-width: 770px) and (max-width: 1024px) {
