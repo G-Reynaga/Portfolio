@@ -66,13 +66,17 @@
       <section id="home">
         <div class="info-content">
           <h1>I'm <span>Gerson </span>Reynaga</h1>
-          <p>Full stack web developer</p>
-          <a href="Curriculum Desarrollador (1).pdf" download="GR-CV.pdf">
-            <button>
-              Download CV
-              <span><i class="fa-solid fa-arrow-down"></i></span>
-            </button>
-          </a>
+          <div class="text-animation">
+            <p class="typing-animation">Full stack web developer</p>
+          </div>
+          <div>
+            <a href="Curriculum Desarrollador (1).pdf" download="GR-CV.pdf">
+              <button>
+                Download CV
+                <span><i class="fa-solid fa-arrow-down"></i></span>
+              </button>
+            </a>
+          </div>
         </div>
         <img src="./images/YO.jpg" alt="Yo" />
       </section>
@@ -83,8 +87,8 @@
           <img src="./images/YO.jpg" alt="Yo" />
         </div>
         <p>
-          Soy un programador web full stack de 27 años de edad con amplia
-          experiencia en ReactJS, Redux y Node. Estoy motivado para seguir
+          Soy un programador web full stack con 27 años de edad con amplia
+          experiencia en ReactJS, Redux, NodeJS. Estoy motivado para seguir
           aprendiendo nuevas tecnologías y alcanzar nuevas metas en mi carrera.
           Además, me considero una persona proactiva, un excelente compañero de
           equipo y destaco por mi organización y responsabilidad en cada
@@ -123,45 +127,183 @@
           <h6>NODE JS</h6>
         </span>
         <span>
-          <img src="./images/bootstrap_icon.png" alt="NODE JS" />
+          <img src="./images/bootstrap_icon.png" alt="BOOTSTRAP" />
           <h6>Bootstrap</h6>
+        </span>
+        <span>
+          <img src="./images/sass_icon.png" alt="SASS" />
+          <h6>SASS</h6>
         </span>
       </section>
 
       <h2>Projects</h2>
       <section id="projects">
-        <ul>
-          <li>
-            <a href="https://vimeo.com/825124626?share=copy" target="_blank">
-              <img src="./images/PI Pokemon.png" alt="Proyecto 1" />
-            </a>
-            <a href="https://github.com/G-Reynaga/PI-Pokemon" target="_blank">
-              <h3>PI Pokemon</h3>
-            </a>
-          </li>
-          <li>
-            <a href="https://vimeo.com/manage/videos/825269857" target="_blank">
-              <img src="./images/PF The Wave.png" alt="Proyecto 2" />
-            </a>
+        <div class="card">
+          <a href="https://vimeo.com/825124626?share=copy" target="_blank">
+            <img
+              src="./images/PI Pokemon.png"
+              class="card-img-top"
+              alt="Proyect Pokemon"
+            />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">PI Pokemon</h5>
+            <p class="card-text">
+              Proyecto donde se realizo el consumo de la API pokeApi en la cual
+              tiene como incio un landing page luego se podra ver las cards, se
+              logra hacer busquedas hasta hay un formulario para poder agregar
+              un 'pokemon' nuevo
+            </p>
             <a
-              href="https://proyecto-the-wave-client-1kip.vercel.app/"
+              href="https://github.com/G-Reynaga/PI-Pokemon"
               target="_blank"
+              class="btn btn-primary"
+              id="btn"
+              >Repository</a
             >
-              <h3>The Wave</h3>
-            </a>
-          </li>
-          <li>
+          </div>
+        </div>
+        <div class="card">
+          <a href="https://vimeo.com/manage/videos/825269857" target="_blank">
+            <img
+              src="./images/PF The Wave.png"
+              class="card-img-top"
+              alt="Project The Wave"
+            />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">The Wave</h5>
+            <p class="card-text">
+              "The Wave" es un proyecto que realizamos mi equipo y yo como parte
+              de nuestro trabajo final. Creamos un e-commerce de productos
+              náuticos, la cual incluye una gran variedad de artículos que van
+              desde las ventas de tablas de surf hasta aletas para buceo.
+            </p>
             <a
-              href="https://www.linkedin.com/posts/gerson-moises-reynaga-sotelo_activity-7061583786915831808-qguL?utm_source=share&utm_medium=member_desktop"
+              href="https://github.com/Fiorellafrini/Proyecto_TheWave_client"
+              class="btn btn-primary"
               target="_blank"
+              id="btn"
+              >Repository</a
             >
-              <img src="./images/RickandMorty.png" alt="Proyecto 3" />
-            </a>
-            <a href="https://github.com/G-Reynaga/RickAndMorty" target="_blank">
-              <h3>Rick and Morty</h3>
-            </a>
-          </li>
-        </ul>
+            <a
+              href="https://proyecto-the-wave-client-1kip.vercel.app"
+              target="_blank"
+              class="btn btn-primary"
+              id="btn"
+              >Deploy</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <a
+            href="https://www.linkedin.com/posts/gerson-moises-reynaga-sotelo_activity-7061583786915831808-qguL?utm_source=share&utm_medium=member_desktop"
+            target="_blank"
+          >
+            <img
+              src="./images/RickandMorty.png"
+              class="card-img-top"
+              alt="Project Rick and Morty"
+            />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Rick and Morty</h5>
+            <p class="card-text">
+              Proyecto donde se realizo el consumo de la API The Rick and Morty
+              donde en el veras un login para acceder a la paginas donde se ver
+              las cards de los personajes donde al selecionar se logra ver el
+              detalle del personaje una barra de busqueda para poder buscar al
+              personaje
+            </p>
+            <a
+              href="https://github.com/G-Reynaga/RickAndMorty"
+              target="_blank"
+              class="btn btn-primary"
+              id="btn"
+              >Repository</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./images/Calculator.png"
+            class="card-img-top"
+            alt="Calculator"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Calculator</h5>
+            <p class="card-text">
+              Calculadora funcional diseñada con Sass y programada en
+              JavaScript, que permite realizar operaciones matemáticas básicas
+              de manera interactiva y visualmente atractiva.
+            </p>
+            <a
+              href="https://github.com/G-Reynaga/Calculadora"
+              target="_blank"
+              class="btn btn-primary"
+              id="btn"
+              >Repository</a
+            >
+            <a
+              href="https://calculadora-g-reynaga.vercel.app/"
+              target="_blank"
+              class="btn btn-primary"
+              id="btn"
+              >Deploy</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/Timer.png" class="card-img-top" alt="Timer" />
+          <div class="card-body">
+            <h5 class="card-title">Timer</h5>
+            <p class="card-text">
+              Temporizador interactivo desarrollado en JavaScript que muestra
+              una cuenta regresiva en tiempo real. El temporizador cuenta hacia
+              atrás de forma precisa y dinámica.
+            </p>
+            <a
+              href="https://github.com/G-Reynaga/TEMPORIZADOR"
+              target="_blank"
+              class="btn btn-primary"
+              id="btn"
+              >Repository</a
+            >
+            <a
+              href="https://temporizador-timer.vercel.app/"
+              target="_blank"
+              class="btn btn-primary"
+              id="btn"
+              >Deploy</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/Redes.png" class="card-img-top" alt="Redes" />
+          <div class="card-body">
+            <h5 class="card-title">Redes</h5>
+            <p class="card-text">
+              Conjunto de iconos de redes sociales interactivos con efecto de
+              animación hover, mostrando el nombre de cada red social. Estos
+              iconos ofrecen una forma atractiva y llamativa de dirigir a los
+              usuarios a las diferentes plataformas sociales.
+            </p>
+            <a
+              href="https://github.com/G-Reynaga/Redes"
+              target="_blank"
+              class="btn btn-primary"
+              id="btn"
+              >Repository</a
+            >
+            <a
+              href="https://redes-sociales.vercel.app/"
+              target="_blank"
+              class="btn btn-primary"
+              id="btn"
+              >Deploy</a
+            >
+          </div>
+        </div>
       </section>
 
       <h2>Contact</h2>
@@ -260,9 +402,10 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12">
-            <a href="#"><i class="fa-solid fa-arrow-up fa-beat fa-lg"></i></a>
+            <a href="#"><i class="fa-solid fa-arrow-up fa-lg"></i></a>
             <p class="copyright small">
               &copy; Gerson Reynaga - Portfolio - 2023
+              <span><i class="fa-sharp fa-solid fa-heart fa-beat"></i></span>
             </p>
           </div>
         </div>
