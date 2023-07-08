@@ -145,7 +145,15 @@ p {
   background-color: #4c32cd;
   color: #ffffff;
   box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.8);
-  transition: all 0.15s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#home #whatsapp {
+  background: #0bb127;
+}
+
+#home #whatsapp:hover {
+  background: #097c1c;
 }
 
 #home button:hover {
@@ -269,7 +277,35 @@ p {
 
 #projects .card h5 {
   color: #4c32cd;
-  text-shadow: 5px 5px 3px rgb(0, 0, 0);
+  text-shadow: 5px 3px 3px rgb(0, 0, 0);
+}
+
+.technology {
+  font-size: 2rem;
+}
+
+.fa-html5 {
+  color: #ff5e00c7;
+}
+
+.fa-css3-alt {
+  color: #156cc3;
+}
+
+.fa-js {
+  color: #d8ca0a;
+}
+
+.fa-sass {
+  color: #a7189b;
+}
+
+.fa-react {
+  color: #61dbfb;
+}
+
+.fa-node {
+  color: #33982b;
 }
 
 #contact {
@@ -294,6 +330,7 @@ p {
   background-color: #4c32cd;
   box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.8);
   border: none;
+  transition: all 0.3s ease-in-out;
 }
 
 #btn:hover {
