@@ -239,7 +239,7 @@ p {
 }
 
 #skills img {
-  width: 12rem;
+  height: 12rem;
 }
 
 #skills img:hover {
@@ -505,7 +505,7 @@ footer .copyright {
   }
 
   #skills img {
-    width: 5rem;
+    height: 5rem;
   }
 
   #contact {
