@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");
 
 ::-webkit-scrollbar {
-  width: 2px;
-  height: 2px;
+  width: 4px;
+  height: 4px;
   background-color: rgb(224, 223, 223);
 }
 
