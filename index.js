@@ -3,14 +3,14 @@ window.sr = ScrollReveal();
 ScrollReveal().reveal(".right", {
   duration: 2000,
   origin: "right",
-  distance: "100px",
+  distance: "40px",
   reset: true,
 });
 
 ScrollReveal().reveal(".left", {
   duration: 2000,
   origin: "left",
-  distance: "100px",
+  distance: "40px",
   reset: true,
 });
 
@@ -39,7 +39,7 @@ ScrollReveal().reveal(".acerca-de", {
 });
 
 ScrollReveal().reveal(".skill", {
-  duration: 1500,
   scale: 0.85,
+  interval: 16,
   reset: true,
 });
