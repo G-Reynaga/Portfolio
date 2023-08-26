@@ -41,5 +41,4 @@ ScrollReveal().reveal(".acerca-de", {
 ScrollReveal().reveal(".skill", {
   scale: 0.85,
   interval: 16,
-  reset: true,
 });

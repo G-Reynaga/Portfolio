@@ -24,10 +24,7 @@
 
 body {
   user-select: none;
-  background-image: url("./images/fondos.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: #150c43 !important;
 }
 
 img {
@@ -41,7 +38,7 @@ a {
 .navbar {
   display: flex;
   justify-content: space-between;
-  backdrop-filter: blur(10px);
+  background-color: #08090a93;
 }
 
 .navbar .navbar-brand {
@@ -463,7 +460,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 4px;
   background-color: #08090a93;
 }
 
@@ -479,10 +475,6 @@ footer .copyright {
 
 @media only screen and (max-width: 769px) {
   /* Estilos para dispositivos móviles */
-  body {
-    background-image: url("./images/fondoMobile.jpg");
-  }
-
   #home {
     grid-template-columns: repeat(1, 1fr);
   }
