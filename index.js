@@ -41,4 +41,20 @@ ScrollReveal().reveal(".acerca-de", {
 ScrollReveal().reveal(".skill", {
   scale: 0.85,
   interval: 16,
+  delay: 300
 });
+
+function copiarMail() {
+  // Copia lo que contiene el input al dar click
+  var codigoACopiar = document.getElementById("email");
+  navigator.clipboard.writeText(codigoACopiar.value);
+
+  // Cambia el contenido del tooltip después de copiar
+  var tooltipText = document.getElementById("tooltipText");
+  tooltipText.innerText = "Copiado!";
+
+  // Restaura el contenido original del tooltip
+  setTimeout(function () {
+    tooltipText.innerText = "Copiar";
+  }, 1000);
+}

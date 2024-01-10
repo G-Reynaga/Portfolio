@@ -128,7 +128,7 @@ p {
 }
 
 #home img {
-  border-radius: 15px;
+  height: 20rem;
 }
 
 #home p {
@@ -228,7 +228,7 @@ p {
   width: 50%;
 }
 
-#skills {
+#skills ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -236,17 +236,24 @@ p {
 }
 
 #skills img {
-  height: 12rem;
+  height: 2rem;
 }
 
-#skills img:hover {
+#skills li {
+  list-style: none;
+}
+
+#skills li:hover {
   animation: pulse infinite;
   animation-duration: 1s;
 }
 
 #skills span {
-  text-align: center;
+  padding: 1rem;
   color: white;
+  background-color: rgba(51, 51, 51, 0.4);
+  box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
 }
 
 #projects {
@@ -310,19 +317,6 @@ p {
   justify-content: center;
 }
 
-.formulario {
-  width: 50%;
-}
-
-.formulario .form-control:focus {
-  box-shadow: none;
-  outline: none;
-}
-
-#message {
-  resize: none;
-}
-
 #btn {
   background-color: #4c32cd;
   box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.8);
@@ -337,6 +331,58 @@ p {
 #btn:active {
   background-color: #4c32cd;
   box-shadow: none;
+}
+
+.con-tooltip {
+  position: relative;
+  border-radius: 9px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-tooltip {
+  visibility: hidden;
+  z-index: 1;
+  opacity: 0.4;
+  padding: 10px 20px;
+  background: #333;
+  position: absolute;
+  top: -30%;
+  left: 150%;
+  border-radius: 9px;
+  font: 16px;
+  transform: translateY(9px);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 3px rgba(56, 54, 54, 0.86);
+  cursor: default
+}
+
+.bnt-tooltip::after {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 12.5px 0 12.5px;
+  border-color: #333 transparent transparent transparent;
+  position: absolute;
+  left: 40%;
+}
+
+.con-tooltip:hover .btn-tooltip {
+  visibility: visible;
+  transform: translateY(-10px);
+  opacity: 1;
+  transition: 0.3s linear;
+  animation: odsoky 1s ease-in-out infinite alternate;
+}
+
+@keyframes odsoky {
+  0% {
+    transform: translateY(6px);
+  }
+
+  100% {
+    transform: translateY(1px);
+  }
 }
 
 .mis-redes {
@@ -496,16 +542,16 @@ footer .copyright {
     font-size: 1rem;
   }
 
-  #skills img {
-    height: 5rem;
-  }
-
   #contact {
     display: inherit;
   }
 
+  .con-tooltip:hover .btn-tooltip{
+    display: none;
+  }
+
   .formulario {
-    width: inherit;
+    width: 80%;
   }
 
   .wrapper .icon {
@@ -554,5 +600,33 @@ footer .copyright {
 
   #about-me p {
     width: inherit;
+  }
+
+  .con-tooltip:hover .btn-tooltip{
+    display: none;
+  }
+
+  .wrapper .icon:hover .tooltip {
+    display: none;
+  }
+
+  .wrapper .whatsapp {
+    background: #0bb127;
+    color: #ffffff;
+  }
+
+  .wrapper .instagram {
+    background: #e4405f;
+    color: #ffffff;
+  }
+
+  .wrapper .github {
+    background: #333333;
+    color: #ffffff;
+  }
+
+  .wrapper .linkedin {
+    background: #2165a9;
+    color: #ffffff;
   }
 }
