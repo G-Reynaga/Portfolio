@@ -31,7 +31,8 @@
 > [!IMPORTANT]
 > 🎯 **Compromiso Firme:** Siempre estoy dispuesto a dar lo mejor de mí. Cada proyecto refleja mi dedicación y enfoque para superar desafíos. Estoy apasionado por alcanzar la excelencia y crear soluciones impactantes. ¡Tu confianza en mi trabajo es mi mayor motivación!
 
- # Tecnologías Aprendidas 
+ # Tecnologías Aprendidas
+ 
  * **HTML5**
  * **CSS3**
  * **JavaScript**
@@ -40,4 +41,4 @@
  * **Redux**
 
 > [!NOTE]
-> 🚀 **Nota Importante:** Mi viaje en el mundo tecnológico está en constante evolución, y estoy emocionado por aprender y dominar nuevas tecnologías. Si encuentras áreas donde puedo mejorar o sugerencias para crecimiento, ¡estaré encantado de recibir tu feedback constructivo! La mejora continua es clave en mi
+> 🚀 Nota a destacar: Mi viaje en el mundo tecnológico está en constante evolución, y estoy emocionado por aprender y dominar nuevas tecnologías. Si encuentras áreas en las que pueda mejorar o tienes sugerencias para mi crecimiento, ¡estaré encantado de recibir tu feedback constructivo! La mejora continua es fundamental en mi enfoque hacia el desarrollo y la innovación.
