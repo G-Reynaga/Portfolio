@@ -10,7 +10,7 @@
 > [!TIP]
 > 💡 **Consejo del Portfolio:** Explora los proyectos en detalle. Cada proyecto no solo muestra mis habilidades técnicas, sino también el proceso creativo y las soluciones a desafíos específicos. ¡No dudes en sumergirte en los detalles y descubrir más sobre mi enfoque en el desarrollo de software!
 
-# Secciones del Portfolio:
+# Secciones del Portfolio
 
 * **Perfil:** Descubre quién soy, mi experiencia, habilidades y motivación en el campo tecnológico.
 
