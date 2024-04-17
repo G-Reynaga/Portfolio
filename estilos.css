@@ -37,7 +37,7 @@
 
 body {
   user-select: none;
-  background-color: #150c43 !important;
+  background: linear-gradient(45deg, rgb(156, 163, 175) 0%, rgb(75, 85, 99) 50%, rgb(30, 64, 175) 100%) !important;
 }
 
 img {
@@ -50,20 +50,6 @@ a {
 
 .navbar {
   background-color: #08090a93;
-}
-
-.navbar .navbar-brand {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.navbar .navbar-brand:hover {
-  color: #ffffff;
-}
-
-.navbar .navbar-brand span {
-  color: #4c32cd;
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -103,7 +89,7 @@ a {
   transition: all 0.2s ease-in-out;
 }
 
-.container h2,
+.container h4,
 p {
   color: #ffffff;
 }
