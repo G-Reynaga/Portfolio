@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="images/R Grande.png" type="image/x-icon" />
+    <link rel="icon" href="images/R_Grande.png" type="image/x-icon" />
     <link rel="stylesheet" href="estilos.css" />
     <title>Gerson Reynaga</title>
     <link
@@ -15,10 +15,6 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
@@ -26,9 +22,8 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <h2 class="navbar-brand">G<span>R</span></h2>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid justify-content-end">
           <button
             class="navbar-toggler"
             type="button"
@@ -46,163 +41,170 @@
                 <a class="nav-link" aria-current="page" href="#home">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about-me">Acerca de</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="#skills">Habilidades</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#projects">Proyectos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contacto</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <div class="container animate__animated animate__fadeIn">
-      <section id="home">
+    <div class="container">
+      <section class="home col-lg-6" id="home">
+        <div class="d-flex align-items-center">
+          <div class="yo me-3">
+            <img src="./images/YO.jpg" alt="Yo" />
+          </div>
+          <!-- <span class="badge border border-success"
+            >Disponible para trabajar
+          </span> -->
+        </div>
         <div class="info-content">
           <h1>Soy <span>Gerson </span>Reynaga</h1>
           <div class="text-animation">
             <p class="typing-animation">Full stack web developer</p>
           </div>
-          <div>
-            <div class="d-flex">
-              <a href="https://wa.me/51977177849" target="_blank">
-                <button class="me-2" id="whatsapp">
-                  Contáctame
-                  <span><i class="fab fa-whatsapp fa-beat"></i></span>
-                </button>
-              </a>
-              <a href="CV Gerson Reynaga.pdf" target="_blank">
-                <button>
-                  Curriculum Vitae
-                  <span><i class="fas fa-file-alt"></i></span>
-                </button>
-              </a>
+          <p class="acerca-de">
+            Especializado en el desarrollo de aplicaciones web únicas, en busca
+            de un puesto desafiante donde pueda compartir lo aprendido y a la
+            vez continuar sumando conocimientos.
+          </p>
+          <div class="mb-3">
+            <a href="https://wa.me/51977177849" target="_blank">
+              <button id="whatsapp">
+                Contáctame
+                <span><i class="fab fa-whatsapp fa-beat"></i></span>
+              </button>
+            </a>
+            <a href="CV Gerson Reynaga.pdf" target="_blank">
+              <button>
+                Curriculum Vitae
+                <span><i class="fas fa-file-alt"></i></span>
+              </button>
+            </a>
+          </div>
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="text"
+                id="email"
+                class="form-control"
+                value="gerson.reynaga23@gmail.com"
+                disabled
+              />
+            </div>
+            <div class="col">
+              <button class="btn btn-primary" id="btn" onclick="copiarMail()">
+                <span><i class="far fa-clone"></i></span>
+              </button>
             </div>
           </div>
         </div>
-        <img src="./images/code.png" alt="Yo" class="yoo" />
-      </section>
-
-      <h2><i class="fas fa-file-code"></i> Acerca de</h2>
-      <section id="about-me">
-        <div class="yo">
-          <img src="./images/YO.jpg" alt="Yo" />
-        </div>
-        <p class="acerca-de">
-          Soy un programador web full stack con 27 años de edad con amplia
-          experiencia en ReactJS, Redux, NodeJS. Estoy motivado para seguir
-          aprendiendo nuevas tecnologías y alcanzar nuevas metas en mi carrera.
-          Además, me considero una persona proactiva, un excelente compañero de
-          equipo y destaco por mi organización y responsabilidad en cada
-          proyecto.
-        </p>
       </section>
 
       <h2><i class="fas fa-code"></i> Habilidades</h2>
       <section id="skills">
-        <ul>
-          <li>
-            <span class="skill">
-              <img src="./images/html5_icon.png" alt="HTML" />
-              HTML
-            </span>
-          </li>
-          <li>
-            <span class="skill">
-              <img src="./images/css3_icon.png" alt="CSS" />
-              CSS
-            </span>
-          </li>
-          <li>
-            <span class="skill">
-              <img src="./images/javascript_icon.png" alt="JAVASCRIPT" />
-              JAVASCRIPT
-            </span>
-          </li>
-          <li>
-            <span class="skill">
-              <img src="./images/react_icon.png" alt="REACT" />
-              REACT
-            </span>
-          </li>
-          <li>
-            <span class="skill">
-              <img src="./images/redux_icon.png" alt="REDUX" />
-              REDUX
-            </span>
-          </li>
-          <li>
-            <span class="skill">
-              <img src="./images/postgres_icon.png" alt="POSTGRES" />
-              POSTGRES
-            </span>
-          </li>
-          <li>
-            <span class="skill">
-              <img src="./images/node_icon.png" alt="NODE JS" />
-              NODE JS
-            </span>
-          </li>
-          <li>
-            <span class="skill">
-              <img src="./images/bootstrap_icon.png" alt="BOOTSTRAP" />
-              Bootstrap
-            </span>
-          </li>
-          <li>
-            <span class="skill">
-              <img src="./images/sass_icon.png" alt="SASS" />
-              SASS
-            </span>
-          </li>
-          <li>
-            <span class="skill">
-              <img src="./images/php_icon.png" alt="PHP" />
-              PHP
-            </span>
-          </li>
-          <li>
-            <span class="skill">
-              <img src="./images/csharp_icon.png" alt="C#" />
-              C#
-            </span>
-          </li>
-          <li>
-            <span class="skill">
-              <img src="./images/java_icon.png" alt="JAVA" />
-              Java
-            </span>
-          </li>
-          <li>
-            <span class="skill">
-              <img src="./images/spring_icon.png" alt="SPRING" />
-              Spring
-            </span>
-          </li>
-          <li>
-            <span class="skill">
-              <img
-                src="./images/android-studio_icon.png"
-                alt="Android Studio"
-              />
-              Android Studio
-            </span>
-          </li>
-        </ul>
+        <div class="row justify-content-center">
+          <ul class="col-lg-8 d-flex flex-wrap justify-content-center gap-2">
+            <li>
+              <span class="skill">
+                <img src="./images/html5_icon.png" alt="HTML" />
+                HTML
+              </span>
+            </li>
+            <li>
+              <span class="skill">
+                <img src="./images/css3_icon.png" alt="CSS" />
+                CSS
+              </span>
+            </li>
+            <li>
+              <span class="skill">
+                <img src="./images/javascript_icon.png" alt="JAVASCRIPT" />
+                JAVASCRIPT
+              </span>
+            </li>
+            <li>
+              <span class="skill">
+                <img src="./images/react_icon.png" alt="REACT" />
+                REACT
+              </span>
+            </li>
+            <li>
+              <span class="skill">
+                <img src="./images/redux_icon.png" alt="REDUX" />
+                REDUX
+              </span>
+            </li>
+            <li>
+              <span class="skill">
+                <img src="./images/postgres_icon.png" alt="POSTGRES" />
+                POSTGRES
+              </span>
+            </li>
+            <li>
+              <span class="skill">
+                <img src="./images/node_icon.png" alt="NODE JS" />
+                NODE JS
+              </span>
+            </li>
+            <li>
+              <span class="skill">
+                <img src="./images/bootstrap_icon.png" alt="BOOTSTRAP" />
+                Bootstrap
+              </span>
+            </li>
+            <li>
+              <span class="skill">
+                <img src="./images/sass_icon.png" alt="SASS" />
+                SASS
+              </span>
+            </li>
+            <li>
+              <span class="skill">
+                <img src="./images/php_icon.png" alt="PHP" />
+                PHP
+              </span>
+            </li>
+            <li>
+              <span class="skill">
+                <img src="./images/csharp_icon.png" alt="C#" />
+                C#
+              </span>
+            </li>
+            <li>
+              <span class="skill">
+                <img src="./images/java_icon.png" alt="JAVA" />
+                Java
+              </span>
+            </li>
+            <li>
+              <span class="skill">
+                <img src="./images/spring_icon.png" alt="SPRING" />
+                Spring
+              </span>
+            </li>
+            <li>
+              <span class="skill">
+                <img
+                  src="./images/android-studio_icon.png"
+                  alt="Android Studio"
+                />
+                Android Studio
+              </span>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <h2><i class="fas fa-star"></i> Proyectos</h2>
+      <h2><i class="fa-solid fa-briefcase"></i> Proyectos</h2>
       <section id="projects">
         <div class="card left">
           <a href="https://vimeo.com/825124626?share=copy" target="_blank">
             <img
-              src="./images/PI Pokemon.png"
+              src="./images/PI_Pokemon.webp"
               class="card-img-top"
               alt="Proyect Pokemon"
             />
@@ -221,19 +223,22 @@
               logra hacer busquedas hasta hay un formulario para poder agregar
               un 'pokemon' nuevo
             </p>
+
             <a
               href="https://github.com/G-Reynaga/PI-Pokemon"
               target="_blank"
               class="btn btn-primary"
               id="btn"
-              >Repository</a
             >
+              <i class="fab fa-github"></i>
+              Repository
+            </a>
           </div>
         </div>
         <div class="card right">
           <a href="https://vimeo.com/manage/videos/825269857" target="_blank">
             <img
-              src="./images/PF The Wave.png"
+              src="./images/PF_The_Wave.webp"
               class="card-img-top"
               alt="Project The Wave"
             />
@@ -257,14 +262,18 @@
               class="btn btn-primary"
               target="_blank"
               id="btn"
-              >Repository</a
+            >
+              <i class="fab fa-github"></i>
+              Repository</a
             >
             <a
               href="https://proyecto-the-wave-client-1kip.vercel.app"
               target="_blank"
               class="btn btn-primary"
               id="btn"
-              >Deploy</a
+            >
+              <i class="fa-solid fa-paper-plane"></i>
+              Deploy</a
             >
           </div>
         </div>
@@ -274,7 +283,7 @@
             target="_blank"
           >
             <img
-              src="./images/RickandMorty.png"
+              src="./images/RickandMorty.webp"
               class="card-img-top"
               alt="Project Rick and Morty"
             />
@@ -299,13 +308,15 @@
               target="_blank"
               class="btn btn-primary"
               id="btn"
-              >Repository</a
+            >
+              <i class="fab fa-github"></i>
+              Repository</a
             >
           </div>
         </div>
         <div class="card right">
           <img
-            src="./images/Calculator.png"
+            src="./images/Calculator.webp"
             class="card-img-top"
             alt="Calculator"
           />
@@ -327,19 +338,23 @@
               target="_blank"
               class="btn btn-primary"
               id="btn"
-              >Repository</a
+            >
+              <i class="fab fa-github"></i>
+              Repository</a
             >
             <a
               href="https://calculadora-g-reynaga.vercel.app/"
               target="_blank"
               class="btn btn-primary"
               id="btn"
-              >Deploy</a
+            >
+              <i class="fa-solid fa-paper-plane"></i>
+              Deploy</a
             >
           </div>
         </div>
         <div class="card left">
-          <img src="./images/Timer.png" class="card-img-top" alt="Timer" />
+          <img src="./images/Timer.webp" class="card-img-top" alt="Timer" />
           <div class="card-body">
             <h5 class="card-title">Timer</h5>
             <div class="technology">
@@ -357,19 +372,23 @@
               target="_blank"
               class="btn btn-primary"
               id="btn"
-              >Repository</a
+            >
+              <i class="fab fa-github"></i>
+              Repository</a
             >
             <a
               href="https://temporizador-timer.vercel.app/"
               target="_blank"
               class="btn btn-primary"
               id="btn"
-              >Deploy</a
+            >
+              <i class="fa-solid fa-paper-plane"></i>
+              Deploy</a
             >
           </div>
         </div>
         <div class="card right">
-          <img src="./images/Redes.png" class="card-img-top" alt="Redes" />
+          <img src="./images/Redes.webp" class="card-img-top" alt="Redes" />
           <div class="card-body">
             <h5 class="card-title">Redes</h5>
             <div class="technology">
@@ -388,36 +407,19 @@
               target="_blank"
               class="btn btn-primary"
               id="btn"
-              >Repository</a
+            >
+              <i class="fab fa-github"></i>
+              Repository</a
             >
             <a
               href="https://redes-sociales.vercel.app/"
               target="_blank"
               class="btn btn-primary"
               id="btn"
-              >Deploy</a
             >
-          </div>
-        </div>
-      </section>
-
-      <h2><i class="fas fa-envelope"></i> Contacto</h2>
-      <section id="contact">
-        <div class="formulario d-flex">
-          <div class="col-12 me-3">
-            <input
-              type="text"
-              id="email"
-              class="form-control input"
-              value="gerson.reynaga23@gmail.com"
-              disabled
-            />
-          </div>
-          <div class="con-tooltip">
-            <button class="btn btn-primary" id="btn" onclick="copiarMail()">
-              <span class="btn-tooltip" id="tooltipText">Copiar</span>
-              <span><i class="far fa-clone"></i></span>
-            </button>
+              <i class="fa-solid fa-paper-plane"></i>
+              Deploy</a
+            >
           </div>
         </div>
       </section>
@@ -425,7 +427,7 @@
         <ul class="wrapper">
           <a href="https://github.com/G-Reynaga" target="_blank">
             <li class="icon github">
-              <span class="tooltip">Github</span>
+              <span class="tooltip d-none d-sm-block">Github</span>
               <span><i class="fab fa-github"></i></span>
             </li>
           </a>
@@ -434,7 +436,7 @@
             target="_blank"
           >
             <li class="icon linkedin">
-              <span class="tooltip">LinkedIn</span>
+              <span class="tooltip d-none d-sm-block">LinkedIn</span>
               <span><i class="fab fa-linkedin"></i></span>
             </li>
           </a>

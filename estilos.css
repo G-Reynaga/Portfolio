@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");
 
+@font-face {
+  font-family: "Onest Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/onest:vf@latest/latin-wght-normal.woff2)
+    format("woff2-variations");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;
@@ -19,7 +31,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Tilt Warp";
+  font-family: "Onest Variable";
+  font-weight: 500;
 }
 
 body {
@@ -36,13 +49,11 @@ a {
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
   background-color: #08090a93;
 }
 
 .navbar .navbar-brand {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #ffffff;
 }
@@ -84,16 +95,11 @@ a {
   box-shadow: none;
 }
 
-.navbar-nav {
-  font-size: 1.5rem;
-}
-
 .container {
-  padding: 1rem;
-  margin: 1rem;
+  margin: 5rem;
   border-radius: 15px;
-  background-color: rgba(51, 51, 51, 0.4);
-  box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.8);
+  background: #08090a93;
+  box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.8), 5px 6px 8px rgba(0, 0, 0, 0.8);
   transition: all 0.2s ease-in-out;
 }
 
@@ -104,35 +110,39 @@ p {
 
 .container section {
   margin-bottom: 2rem;
-  box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.8),
-    inset 10px 6px 10px rgba(0, 0, 0, 0.25);
-  background-color: rgba(51, 51, 51, 0.5);
   padding: 2rem;
-  border-radius: 1rem;
 }
 
-#home {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  place-items: center;
-  gap: 1rem;
+#home .yo {
+  position: relative;
+  min-width: 4rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#home img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #home h1 {
   font-size: 3rem;
   color: #ffffff;
+  font-weight: bold;
 }
 
 #home h1 span {
   color: #4c32cd;
 }
 
-#home img {
-  height: 20rem;
-}
-
 #home p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 #home button {
@@ -198,41 +208,10 @@ p {
   }
 }
 
-#about-me {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-#about-me .yo {
-  position: relative;
-  min-width: 15rem;
-  width: 15rem;
-  height: 15rem;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-#about-me img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 #about-me p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   width: 50%;
-}
-
-#skills ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
 }
 
 #skills img {
@@ -241,14 +220,6 @@ p {
 
 #skills li {
   list-style: none;
-}
-
-#skills li:hover {
-  animation: pulse infinite;
-  animation-duration: 1s;
-}
-
-#skills span {
   padding: 1rem;
   color: white;
   background-color: rgba(51, 51, 51, 0.4);
@@ -331,48 +302,6 @@ p {
 #btn:active {
   background-color: #4c32cd;
   box-shadow: none;
-}
-
-.con-tooltip {
-  position: relative;
-  border-radius: 9px;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn-tooltip {
-  visibility: hidden;
-  z-index: 1;
-  opacity: 0.4;
-  padding: 10px 20px;
-  background: #333;
-  position: absolute;
-  top: -30%;
-  left: 150%;
-  border-radius: 9px;
-  font: 16px;
-  transform: translateY(9px);
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 3px rgba(56, 54, 54, 0.86);
-  cursor: default
-}
-
-.bnt-tooltip::after {
-  content: " ";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 12px 12.5px 0 12.5px;
-  border-color: #333 transparent transparent transparent;
-  position: absolute;
-  left: 40%;
-}
-
-.con-tooltip:hover .btn-tooltip {
-  visibility: visible;
-  transform: translateY(-10px);
-  opacity: 1;
-  transition: 0.3s linear;
-  animation: odsoky 1s ease-in-out infinite alternate;
 }
 
 @keyframes odsoky {
@@ -517,116 +446,4 @@ footer .copyright {
 
 .copyright span {
   color: #e4405f;
-}
-
-@media only screen and (max-width: 769px) {
-  /* Estilos para dispositivos móviles */
-  #home {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  #home p {
-    font-size: 1.2rem;
-  }
-
-  #home img {
-    display: none;
-  }
-
-  #about-me {
-    flex-wrap: wrap;
-  }
-
-  #about-me p {
-    width: inherit;
-    font-size: 1rem;
-  }
-
-  #contact {
-    display: inherit;
-  }
-
-  .con-tooltip:hover .btn-tooltip{
-    display: none;
-  }
-
-  .formulario {
-    width: 80%;
-  }
-
-  .wrapper .icon {
-    width: 35px;
-    height: 35px;
-    font-size: 18px;
-  }
-
-  .wrapper .icon:hover .tooltip {
-    display: none;
-  }
-
-  .wrapper .whatsapp {
-    background: #0bb127;
-    color: #ffffff;
-  }
-
-  .wrapper .instagram {
-    background: #e4405f;
-    color: #ffffff;
-  }
-
-  .wrapper .github {
-    background: #333333;
-    color: #ffffff;
-  }
-
-  .wrapper .linkedin {
-    background: #2165a9;
-    color: #ffffff;
-  }
-}
-@media only screen and (min-width: 770px) and (max-width: 1024px) {
-  /* Estilos para tabletas */
-  #home {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  #home img {
-    width: 20rem;
-  }
-
-  #about-me .yo {
-    display: none;
-  }
-
-  #about-me p {
-    width: inherit;
-  }
-
-  .con-tooltip:hover .btn-tooltip{
-    display: none;
-  }
-
-  .wrapper .icon:hover .tooltip {
-    display: none;
-  }
-
-  .wrapper .whatsapp {
-    background: #0bb127;
-    color: #ffffff;
-  }
-
-  .wrapper .instagram {
-    background: #e4405f;
-    color: #ffffff;
-  }
-
-  .wrapper .github {
-    background: #333333;
-    color: #ffffff;
-  }
-
-  .wrapper .linkedin {
-    background: #2165a9;
-    color: #ffffff;
-  }
 }
